@@ -1,0 +1,259 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_weight="1"
+    android:elevation="10dp">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="130dp"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <View
+            android:layout_width="120dp"
+            android:layout_height="120dp"
+            android:background="@drawable/paw_prints" />
+        <View
+            android:layout_width="120dp"
+            android:layout_height="120dp"
+            android:layout_marginStart="120dp"
+            android:background="@drawable/paw_prints" />
+
+        <View
+            android:layout_width="120dp"
+            android:layout_height="120dp"
+            android:layout_marginStart="240dp"
+            android:background="@drawable/paw_prints" />
+
+        <View
+            android:layout_width="120dp"
+            android:layout_height="120dp"
+            android:layout_marginStart="360dp"
+            android:background="@drawable/paw_prints" />
+
+    </FrameLayout>
+
+    <View
+        android:id="@+id/view5"
+        android:layout_width="match_parent"
+        android:layout_height="360dp"
+        android:layout_marginTop="80dp"
+        android:background="@drawable/dialog_layout"
+        android:backgroundTint="@color/dark_blue"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:layout_editor_absoluteX="0dp" />
+
+    <EditText
+        android:id="@+id/aPassword"
+        android:layout_width="150dp"
+        android:layout_height="23dp"
+        android:layout_marginTop="6dp"
+        android:background="@drawable/round_corner"
+        android:backgroundTint="@color/white"
+        android:layout_gravity="center_horizontal"
+        android:ems="10"
+        android:hint="Password"
+        android:textSize="13sp"
+        android:inputType="textPassword"
+        android:textColor="@color/dim_gray"
+        android:textColorHint="@color/gray"
+        android:paddingStart="10dp"
+        android:fontFamily="@string/font_family_light"
+        app:layout_constraintEnd_toEndOf="@+id/aStatus"
+        app:layout_constraintStart_toStartOf="@+id/aStatus"
+        app:layout_constraintTop_toBottomOf="@+id/aStatus" />
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/acCircleImageView"
+        android:layout_width="134dp"
+        android:layout_height="130dp"
+        android:layout_marginTop="10dp"
+        android:clickable="true"
+        android:focusable="true"
+        android:src="@drawable/ic_launcher_background"
+        android:background="@drawable/circle_outline"
+        android:backgroundTint="@color/white"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/aFullName"
+        android:layout_width="150dp"
+        android:layout_height="23dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/round_corner"
+        android:backgroundTint="@color/white"
+        android:ems="10"
+        android:fontFamily="@string/font_family_light"
+        android:hint="Full Name"
+        android:paddingStart="10dp"
+        android:textColor="@color/dim_gray"
+        android:textColorHint="@color/gray"
+        android:textSize="13sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/acCircleImageView" />
+
+    <EditText
+        android:id="@+id/aEmail"
+        android:layout_width="150dp"
+        android:layout_height="23dp"
+        android:layout_marginTop="6dp"
+        android:background="@drawable/round_corner"
+        android:backgroundTint="@color/white"
+        android:layout_gravity="center_horizontal"
+        android:ems="10"
+        android:hint="Email"
+        android:paddingStart="10dp"
+        android:textColor="@color/dim_gray"
+        android:textColorHint="@color/gray"
+        android:textSize="13sp"
+        android:fontFamily="@string/font_family_light"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/aFullName"
+        app:layout_constraintTop_toBottomOf="@+id/aFullName" />
+
+    <EditText
+        android:id="@+id/aAddress"
+        android:layout_width="150dp"
+        android:layout_height="23dp"
+        android:layout_marginTop="6dp"
+        android:background="@drawable/round_corner"
+        android:backgroundTint="@color/white"
+        android:layout_gravity="center_horizontal"
+        android:ems="10"
+        android:hint="Address"
+        android:paddingStart="10dp"
+        android:textColor="@color/dim_gray"
+        android:textColorHint="@color/gray"
+        android:textSize="13sp"
+        android:fontFamily="@string/font_family_light"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/aEmail"
+        app:layout_constraintTop_toBottomOf="@+id/aEmail" />
+
+    <EditText
+        android:id="@+id/aPhoneNumber"
+        android:layout_width="150dp"
+        android:layout_height="23dp"
+        android:layout_marginTop="6dp"
+        android:background="@drawable/round_corner"
+        android:backgroundTint="@color/white"
+        android:layout_gravity="center_horizontal"
+        android:ems="10"
+        android:hint="Phone number"
+        android:inputType="number"
+        android:paddingStart="10dp"
+        android:textColor="@color/dim_gray"
+        android:textColorHint="@color/gray"
+        android:textSize="13sp"
+        android:fontFamily="@string/font_family_light"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/aAddress"
+        app:layout_constraintTop_toBottomOf="@+id/aAddress" />
+
+    <EditText
+        android:id="@+id/aAge"
+        android:layout_width="150dp"
+        android:layout_height="23dp"
+        android:layout_marginTop="6dp"
+        android:background="@drawable/round_corner"
+        android:backgroundTint="@color/white"
+        android:layout_gravity="center_horizontal"
+        android:ems="10"
+        android:hint="Age"
+        android:inputType="number"
+        android:textSize="13sp"
+        android:textColor="@color/dim_gray"
+        android:textColorHint="@color/gray"
+        android:paddingStart="10dp"
+        android:fontFamily="@string/font_family_light"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/aRole"
+        app:layout_constraintTop_toBottomOf="@+id/aRole" />
+
+    <EditText
+        android:id="@+id/aStatus"
+        android:layout_width="150dp"
+        android:layout_height="23dp"
+        android:layout_marginTop="6dp"
+        android:background="@drawable/round_corner"
+        android:backgroundTint="@color/white"
+        android:layout_gravity="center_horizontal"
+        android:ems="10"
+        android:hint="Status"
+        android:textSize="13sp"
+        android:textColor="@color/dim_gray"
+        android:textColorHint="@color/gray"
+        android:paddingStart="10dp"
+        android:fontFamily="@string/font_family_light"
+        app:layout_constraintEnd_toEndOf="@+id/aAge"
+        app:layout_constraintStart_toStartOf="@+id/aAge"
+        app:layout_constraintTop_toBottomOf="@+id/aAge" />
+
+    <EditText
+        android:id="@+id/aRole"
+        android:layout_width="150dp"
+        android:layout_height="23dp"
+        android:layout_marginTop="6dp"
+        android:background="@drawable/round_corner"
+        android:backgroundTint="@color/white"
+        android:layout_gravity="center_horizontal"
+        android:ems="10"
+        android:hint="Role"
+        android:paddingStart="10dp"
+        android:textColor="@color/dim_gray"
+        android:textColorHint="@color/gray"
+        android:textSize="13sp"
+        android:fontFamily="@string/font_family_light"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/aPhoneNumber"
+        app:layout_constraintTop_toBottomOf="@+id/aPhoneNumber" />
+
+    <Button
+        android:id="@+id/aRegister"
+        android:layout_width="100dp"
+        android:layout_height="33dp"
+        android:layout_marginTop="12dp"
+        android:layout_marginEnd="50dp"
+        android:layout_marginBottom="15dp"
+        android:background="@drawable/shape_rounded"
+        android:backgroundTint="@color/green"
+        android:text="Register"
+        android:textColor="@color/white"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/aPassword"
+        app:layout_constraintVertical_bias="0.013" />
+
+    <Button
+        android:id="@+id/aCancel"
+        android:layout_width="100dp"
+        android:layout_height="33dp"
+        android:layout_marginStart="70dp"
+        android:layout_marginTop="12dp"
+        android:layout_marginEnd="80dp"
+        android:layout_marginBottom="15dp"
+        android:background="@drawable/shape_rounded"
+        android:backgroundTint="@color/imperial"
+        android:text="Cancel"
+        android:textColor="@color/white"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/aRegister"
+        app:layout_constraintHorizontal_bias="0.281"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/aPassword"
+        app:layout_constraintVertical_bias="0.0" />
+</androidx.constraintlayout.widget.ConstraintLayout>

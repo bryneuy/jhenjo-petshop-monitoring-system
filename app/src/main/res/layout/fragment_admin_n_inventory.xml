@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/gray2"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".Admin.Fragment.Admin_nInventoryFragment">
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:background="@color/colorAccent"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="Inventory"
+        android:textSize="25sp"
+        android:padding="10dp"
+        android:textStyle="bold"
+        android:textColor="@color/white"
+        android:fontFamily="@string/font_family_condensed" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/line" />
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:layout_marginTop="30dp"
+        android:background="@drawable/line" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/gRecyclerView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="70dp"
+        app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager" />
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/nInventory_add"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="end|bottom"
+        android:layout_marginEnd="20dp"
+        android:layout_marginBottom="20dp"
+        android:src="@drawable/ic_add"
+        android:focusable="true"
+        />
+
+    <FrameLayout
+        android:id="@+id/cd_buttons"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="end|bottom"
+        android:visibility="invisible" >
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/nInventory_disable"
+        android:layout_width="35dp"
+        android:layout_height="35dp"
+        android:layout_gravity="end|bottom"
+        android:layout_marginEnd="30dp"
+        android:layout_marginBottom="85dp"
+        android:layout_marginStart="15dp"
+        android:clickable="true"
+        android:src="@drawable/disable"
+        android:tint="@color/dim_gray"
+        android:focusable="true"
+        app:elevation="10dp"
+        app:fabCustomSize="35dp"
+        app:backgroundTint="@color/pastel_orange"/>
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/nInventory_critical"
+        android:layout_width="35dp"
+        android:layout_height="35dp"
+        android:layout_gravity="end|bottom"
+        android:layout_marginEnd="30dp"
+        android:layout_marginBottom="130dp"
+        android:layout_marginStart="15dp"
+        android:clickable="true"
+        android:src="@drawable/critical"
+        android:focusable="true"
+        android:tint="@color/white"
+        app:elevation="10dp"
+        app:fabCustomSize="35dp"
+        app:backgroundTint="@color/imperial"/>
+
+    </FrameLayout>
+    <Button
+        android:id="@+id/inventorySettings"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="10dp"
+        android:layout_gravity="end|top"
+        android:background="@drawable/settings"
+        android:backgroundTint="@color/white"
+        android:clickable="true"
+        android:focusable="true"
+        android:elevation="5dp" />
+
+    <FrameLayout
+        android:id="@+id/inventory_fl_logout"
+        android:layout_width="200dp"
+        android:layout_height="50dp"
+        android:layout_gravity="end|top"
+        android:layout_marginTop="40dp"
+        android:layout_marginEnd="10dp"
+        android:background="@drawable/shape_rounded1"
+        android:clickable="true"
+        android:focusable="true"
+        android:visibility="invisible">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="LOGOUT"
+            android:textSize="17sp"
+            android:textStyle="bold"
+            android:textColor="@color/colorAccent"
+            android:fontFamily="@string/font_family_condensed"/>
+    </FrameLayout>
+
+</FrameLayout>

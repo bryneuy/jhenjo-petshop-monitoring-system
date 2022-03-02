@@ -1,0 +1,247 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/dark_blue">
+
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/iCircleImageView"
+        android:layout_width="137dp"
+        android:layout_height="138dp"
+        android:layout_marginTop="16dp"
+        android:clickable="true"
+        android:focusable="true"
+        android:src="@drawable/ic_launcher_background"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="168dp"
+        android:layout_marginEnd="5dp"
+        android:text="Name: "
+        android:textColor="@color/white"
+        android:textSize="10sp"
+        app:layout_constraintEnd_toStartOf="@+id/iName"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/iName"
+        android:layout_width="160dp"
+        android:layout_height="23dp"
+        android:layout_marginTop="12dp"
+        android:layout_marginEnd="60dp"
+        android:background="@drawable/round_corner"
+        android:backgroundTint="@color/white"
+        android:ems="10"
+        android:hint="Name"
+        android:textSize="13sp"
+        android:paddingStart="10dp"
+        android:textColor="@color/dim_gray"
+        android:textColorHint="@color/gray"
+        android:fontFamily="@string/font_family_light"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.717"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/iCircleImageView" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="5dp"
+        android:layout_marginTop="21dp"
+        android:text="Quantity: "
+        android:textColor="@color/white"
+        android:textSize="10sp"
+        app:layout_constraintEnd_toStartOf="@+id/iQuantity"
+        app:layout_constraintTop_toBottomOf="@+id/textView1" />
+
+    <EditText
+        android:id="@+id/iQuantity"
+        android:layout_width="160dp"
+        android:layout_height="23dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="60dp"
+        android:background="@drawable/round_corner"
+        android:backgroundTint="@color/white"
+        android:ems="10"
+        android:hint="Quantity"
+        android:textSize="13sp"
+        android:paddingStart="10dp"
+        android:textColor="@color/dim_gray"
+        android:textColorHint="@color/gray"
+        android:fontFamily="@string/font_family_light"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/iName"
+        app:layout_constraintTop_toBottomOf="@+id/iName" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="5dp"
+        android:layout_marginTop="21dp"
+        android:text="Price: "
+        android:textColor="@color/white"
+        android:textSize="10sp"
+        app:layout_constraintEnd_toStartOf="@+id/iPrice"
+        app:layout_constraintTop_toBottomOf="@+id/textView2" />
+
+    <EditText
+        android:id="@+id/iPrice"
+        android:layout_width="160dp"
+        android:layout_height="23dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="60dp"
+        android:background="@drawable/round_corner"
+        android:backgroundTint="@color/white"
+        android:ems="10"
+        android:hint="Price"
+        android:textSize="13sp"
+        android:paddingStart="10dp"
+        android:textColor="@color/dim_gray"
+        android:textColorHint="@color/gray"
+        android:fontFamily="@string/font_family_light"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/iQuantity"
+        app:layout_constraintTop_toBottomOf="@+id/iQuantity" />
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="5dp"
+        android:layout_marginTop="21dp"
+        android:text="Status: "
+        android:textColor="@color/white"
+        android:textSize="10sp"
+        app:layout_constraintEnd_toStartOf="@+id/iStatus"
+        app:layout_constraintTop_toBottomOf="@+id/textView3" />
+
+    <EditText
+        android:id="@+id/iStatus"
+        android:layout_width="160dp"
+        android:layout_height="23dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="60dp"
+        android:background="@drawable/round_corner"
+        android:backgroundTint="@color/white"
+        android:ems="10"
+        android:hint="Status"
+        android:textSize="13sp"
+        android:paddingStart="10dp"
+        android:textColor="@color/dim_gray"
+        android:textColorHint="@color/gray"
+        android:fontFamily="@string/font_family_light"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/iPrice"
+        app:layout_constraintTop_toBottomOf="@+id/iPrice" />
+
+    <TextView
+        android:id="@+id/textView6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="5dp"
+        android:layout_marginTop="21dp"
+        android:text="Category: "
+        android:textColor="@color/white"
+        android:textSize="10sp"
+        app:layout_constraintEnd_toStartOf="@+id/iQuantity"
+        app:layout_constraintTop_toBottomOf="@+id/textView5" />
+
+    <EditText
+        android:id="@+id/iCategory"
+        android:layout_width="160dp"
+        android:layout_height="23dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="60dp"
+        android:background="@drawable/round_corner"
+        android:backgroundTint="@color/white"
+        android:ems="10"
+        android:hint="Category"
+        android:textSize="13sp"
+        android:textColor="@color/dim_gray"
+        android:textColorHint="@color/gray"
+        android:paddingStart="10dp"
+        android:fontFamily="@string/font_family_light"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/iCriticalValue"
+        app:layout_constraintTop_toBottomOf="@+id/iCriticalValue" />
+
+    <TextView
+        android:id="@+id/textView5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="5dp"
+        android:layout_marginTop="21dp"
+        android:text="Critical Value: "
+        android:textColor="@color/white"
+        android:textSize="10sp"
+        app:layout_constraintEnd_toStartOf="@+id/iCriticalValue"
+        app:layout_constraintTop_toBottomOf="@+id/textView4" />
+
+    <EditText
+        android:id="@+id/iCriticalValue"
+        android:layout_width="160dp"
+        android:layout_height="23dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="60dp"
+        android:background="@drawable/round_corner"
+        android:backgroundTint="@color/white"
+        android:ems="10"
+        android:hint="Critical Value"
+        android:textSize="13sp"
+        android:paddingStart="10dp"
+        android:textColor="@color/dim_gray"
+        android:textColorHint="@color/gray"
+        android:fontFamily="@string/font_family_light"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/iStatus"
+        app:layout_constraintTop_toBottomOf="@+id/iStatus" />
+
+    <Button
+        android:id="@+id/iCreate"
+        android:layout_width="100dp"
+        android:layout_height="33dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="60dp"
+        android:layout_marginBottom="20dp"
+        android:background="@drawable/shape_rounded"
+        android:backgroundTint="@color/green"
+        android:text="Create"
+        android:textColor="@color/white"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/iCategory"
+        app:layout_constraintVertical_bias="0.013" />
+
+    <Button
+        android:id="@+id/iCancel"
+        android:layout_width="100dp"
+        android:layout_height="33dp"
+        android:layout_marginStart="60dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="20dp"
+        android:background="@drawable/shape_rounded"
+        android:backgroundTint="@color/imperial"
+        android:text="Cancel"
+        android:textColor="@color/white"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/iCategory"
+        app:layout_constraintVertical_bias="0.012" />
+</androidx.constraintlayout.widget.ConstraintLayout>

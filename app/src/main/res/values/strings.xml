@@ -1,0 +1,38 @@
+<resources>
+    <string name="app_name">Jhenjo Petshop</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="account">Account</string>
+    <string name="purchase">Purchase</string>
+    <string name="inventory">Inventory</string>
+    <string name="finance">Finance</string>
+    <string name="request">Request</string>
+    <string name="sign_email">Sign in with email</string>
+    <string name="sign_google">Sign in with google</string>
+    <string name="sign_phone">Sign in with phone</string>
+    <string name="login">Login</string>
+    <string name="password">password</string>
+
+    <string name="critical_value_notice">Note: Item/s need to restock.</string>
+
+    <!-- Font Styles. -->
+    <string name="font_family_light">sans-serif-light</string>
+    <string name="font_family_medium">sans-serif-medium</string>
+    <string name="font_family_regular">sans-serif</string>
+    <string name="font_family_condensed">sans-serif-condensed</string>
+    <string name="font_family_black">sans-serif-black</string>
+    <string name="font_family_thin">sans-serif-thin</string>
+    <!--    <string name="direct_customer">Im a Customer</string>-->
+    <!--    <string-array name="spinner_menu">-->
+    <!--        <item>Animals</item>-->
+    <!--        <item>Foods</item>-->
+    <!--        <item>Others</item>-->
+    <!--    </string-array>-->
+    <!--    <string name="create">Create</string>-->
+    <!--    <string name="movie_title">Movie Title</string>-->
+    <!--    <string name="movie_description">Movie Description</string>-->
+    <!--    <string name="cancel">Cancel</string>-->
+    <!--    <string name="title">Title</string>-->
+    <!--    <string name="description">Description</string>-->
+</resources>

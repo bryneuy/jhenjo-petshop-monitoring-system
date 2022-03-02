@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/employee_purchase"
+        android:icon="@drawable/ic_purchase"
+        android:title="@string/purchase"/>
+    <item
+        android:id="@+id/employee_inventory"
+        android:icon="@drawable/ic_inventory"
+        android:title="@string/inventory"/>
+
+</menu>

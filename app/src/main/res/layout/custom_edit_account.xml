@@ -1,0 +1,318 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_weight="1"
+    android:elevation="10dp" >
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="130dp"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <View
+            android:layout_width="120dp"
+            android:layout_height="120dp"
+            android:background="@drawable/paw_prints" />
+        <View
+            android:layout_width="120dp"
+            android:layout_height="120dp"
+            android:layout_marginStart="120dp"
+            android:background="@drawable/paw_prints" />
+        <View
+            android:layout_width="120dp"
+            android:layout_height="120dp"
+            android:layout_marginStart="240dp"
+            android:background="@drawable/paw_prints" />
+        <View
+            android:layout_width="120dp"
+            android:layout_height="120dp"
+            android:layout_marginStart="360dp"
+            android:background="@drawable/paw_prints" />
+
+    </FrameLayout>
+
+    <View
+        android:id="@+id/view"
+        android:layout_width="match_parent"
+        android:layout_height="450dp"
+        android:layout_marginTop="80dp"
+        android:background="@drawable/dialog_layout"
+        android:backgroundTint="@color/dark_blue"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.973"
+        tools:layout_editor_absoluteX="0dp" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:text="Password: "
+        android:textColor="@color/white"
+        android:textSize="11sp"
+        app:layout_constraintEnd_toEndOf="@id/textView7"
+        app:layout_constraintTop_toBottomOf="@id/textView7" />
+
+    <EditText
+        android:id="@+id/eaPassword"
+        android:layout_width="150dp"
+        android:layout_height="25dp"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/round_corner"
+        android:backgroundTint="@color/white"
+        android:ems="10"
+        android:fontFamily="@string/font_family_light"
+        android:hint="Password"
+        android:paddingStart="10dp"
+        android:textSize="13dp"
+        android:textColor="@color/dim_gray"
+        android:textColorHint="@color/gray"
+        app:layout_constraintEnd_toEndOf="@+id/eaEmail"
+        app:layout_constraintTop_toBottomOf="@+id/eaEmail" />
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/eacCircleImageView"
+        android:layout_width="129dp"
+        android:layout_height="122dp"
+        android:layout_marginTop="16dp"
+        android:clickable="true"
+        android:focusable="true"
+        android:src="@drawable/ic_launcher_background"
+        android:background="@drawable/circle_outline"
+        android:backgroundTint="@color/white"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/eaFullName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:backgroundTint="@color/white"
+        android:ems="10"
+        android:hint="Full name"
+        android:textColor="@color/white"
+        android:textColorHint="@color/gray"
+        android:fontFamily="@string/font_family_condensed"
+        android:paddingStart="10dp"
+        android:gravity="center"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/eacCircleImageView" />
+
+    <TextView
+        android:id="@+id/textView7"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:layout_marginEnd="10dp"
+        android:text="Email: "
+        android:textColor="@color/white"
+        android:textSize="11sp"
+        app:layout_constraintEnd_toStartOf="@+id/eaEmail"
+        app:layout_constraintTop_toBottomOf="@+id/eaFullName" />
+
+    <EditText
+        android:id="@+id/eaEmail"
+        android:layout_width="150dp"
+        android:layout_height="25dp"
+        android:layout_marginStart="120dp"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/shape_rounded"
+        android:backgroundTint="@color/white"
+        android:ems="10"
+        android:fontFamily="@string/font_family_light"
+        android:hint="Email"
+        android:paddingStart="10dp"
+        android:textSize="13sp"
+        android:textColor="@color/dim_gray"
+        android:textColorHint="@color/gray"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/eaFullName" />
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:text="Address: "
+        android:textColor="@color/white"
+        android:textSize="11sp"
+        app:layout_constraintEnd_toEndOf="@+id/textView3"
+        app:layout_constraintTop_toBottomOf="@+id/textView3" />
+
+    <EditText
+        android:id="@+id/eaAddress"
+        android:layout_width="150dp"
+        android:layout_height="25dp"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/round_corner"
+        android:backgroundTint="@color/white"
+        android:ems="10"
+        android:fontFamily="@string/font_family_light"
+        android:hint="Address"
+        android:paddingStart="10dp"
+        android:textSize="13sp"
+        android:textColor="@color/dim_gray"
+        android:textColorHint="@color/gray"
+        app:layout_constraintEnd_toEndOf="@id/eaPassword"
+        app:layout_constraintTop_toBottomOf="@+id/eaPassword" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:text="Phone Number: "
+        android:textColor="@color/white"
+        android:textSize="11sp"
+        app:layout_constraintEnd_toEndOf="@+id/textView1"
+        app:layout_constraintTop_toBottomOf="@+id/eaAddress" />
+
+    <EditText
+        android:id="@+id/eaPhoneNumber"
+        android:layout_width="150dp"
+        android:layout_height="25dp"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/round_corner"
+        android:backgroundTint="@color/white"
+        android:ems="10"
+        android:hint="Phone number"
+        android:inputType="number"
+        android:paddingStart="10dp"
+        android:textSize="13sp"
+        android:textColor="@color/dim_gray"
+        android:textColorHint="@color/gray"
+        android:fontFamily="@string/font_family_light"
+        app:layout_constraintEnd_toEndOf="@+id/eaAddress"
+        app:layout_constraintTop_toBottomOf="@+id/eaAddress" />
+
+    <TextView
+        android:id="@+id/textView5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:text="Age: "
+        android:textColor="@color/white"
+        android:textSize="11sp"
+        app:layout_constraintEnd_toEndOf="@+id/textView4"
+        app:layout_constraintTop_toBottomOf="@+id/eaRole" />
+
+    <EditText
+        android:id="@+id/eaAge"
+        android:layout_width="150dp"
+        android:layout_height="25dp"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/round_corner"
+        android:backgroundTint="@color/white"
+        android:ems="10"
+        android:hint="Age"
+        android:inputType="number"
+        android:paddingStart="10dp"
+        android:textSize="13sp"
+        android:textColor="@color/dim_gray"
+        android:textColorHint="@color/gray"
+        android:fontFamily="@string/font_family_light"
+        app:layout_constraintEnd_toEndOf="@+id/eaRole"
+        app:layout_constraintTop_toBottomOf="@+id/eaRole" />
+
+    <TextView
+        android:id="@+id/textView6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:text="Status: "
+        android:textColor="@color/white"
+        android:textSize="11sp"
+        app:layout_constraintEnd_toEndOf="@+id/textView5"
+        app:layout_constraintTop_toBottomOf="@+id/eaAge" />
+
+    <EditText
+        android:id="@+id/eaStatus"
+        android:layout_width="150dp"
+        android:layout_height="25dp"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/round_corner"
+        android:backgroundTint="@color/white"
+        android:ems="10"
+        android:hint="Status"
+        android:paddingStart="10dp"
+        android:textSize="13sp"
+        android:textColor="@color/dim_gray"
+        android:textColorHint="@color/gray"
+        android:fontFamily="@string/font_family_light"
+        app:layout_constraintEnd_toEndOf="@+id/eaAge"
+        app:layout_constraintTop_toBottomOf="@+id/eaAge" />
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:text="Role: "
+        android:textColor="@color/white"
+        android:textSize="11sp"
+        app:layout_constraintEnd_toEndOf="@+id/textView2"
+        app:layout_constraintTop_toBottomOf="@id/eaPhoneNumber" />
+
+    <EditText
+        android:id="@+id/eaRole"
+        android:layout_width="150dp"
+        android:layout_height="25dp"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/round_corner"
+        android:backgroundTint="@color/white"
+        android:ems="10"
+        android:hint="Role"
+        android:paddingStart="10dp"
+        android:textSize="13sp"
+        android:textColor="@color/dim_gray"
+        android:textColorHint="@color/gray"
+        android:fontFamily="@string/font_family_light"
+        app:layout_constraintEnd_toEndOf="@+id/eaPhoneNumber"
+        app:layout_constraintTop_toBottomOf="@+id/eaPhoneNumber" />
+
+    <Button
+        android:id="@+id/eaUpdate"
+        android:layout_width="100dp"
+        android:layout_height="33dp"
+        android:layout_marginEnd="56dp"
+        android:layout_marginBottom="15dp"
+        android:layout_marginTop="15dp"
+        android:background="@drawable/shape_rounded"
+        android:backgroundTint="@color/green"
+        android:text="Update"
+        android:textColor="@color/white"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/eaStatus"
+        app:layout_constraintVertical_bias="0.158" />
+
+    <Button
+        android:id="@+id/eaCancel"
+        android:layout_width="100dp"
+        android:layout_height="33dp"
+        android:layout_marginStart="65dp"
+        android:layout_marginTop="15dp"
+        android:layout_marginBottom="15dp"
+        android:layout_marginEnd="50dp"
+        android:background="@drawable/shape_rounded"
+        android:backgroundTint="@color/imperial"
+        android:text="Cancel"
+        android:textColor="@color/white"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/eaUpdate"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/eaStatus"
+        app:layout_constraintVertical_bias="0.158" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/dark_blue">
+
+    <EditText
+        android:id="@+id/eName"
+        android:layout_width="200dp"
+        android:layout_height="25dp"
+        android:layout_marginTop="26dp"
+        android:background="@drawable/round_corner"
+        android:backgroundTint="@color/white"
+        android:ems="10"
+        android:hint="Name"
+        android:textSize="13sp"
+        android:textColor="@color/dim_gray"
+        android:textColorHint="@color/gray"
+        android:paddingStart="10dp"
+        android:fontFamily="@string/font_family_light"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/eQuantity"
+        android:layout_width="200dp"
+        android:layout_height="25dp"
+        android:layout_marginTop="5dp"
+        android:background="@drawable/round_corner"
+        android:backgroundTint="@color/white"
+        android:ems="10"
+        android:hint="Quantity"
+        android:textSize="13sp"
+        android:textColor="@color/dim_gray"
+        android:textColorHint="@color/gray"
+        android:paddingStart="10dp"
+        android:fontFamily="@string/font_family_light"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/eName" />
+
+    <EditText
+        android:id="@+id/ePrice"
+        android:layout_width="200dp"
+        android:layout_height="25dp"
+        android:layout_marginTop="5dp"
+        android:background="@drawable/round_corner"
+        android:backgroundTint="@color/white"
+        android:ems="10"
+        android:hint="Price"
+        android:textSize="13sp"
+        android:textColor="@color/dim_gray"
+        android:textColorHint="@color/gray"
+        android:paddingStart="10dp"
+        android:fontFamily="@string/font_family_light"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/eQuantity" />
+
+    <EditText
+        android:id="@+id/eStatus"
+        android:layout_width="200dp"
+        android:layout_height="25dp"
+        android:layout_marginTop="5dp"
+        android:background="@drawable/round_corner"
+        android:backgroundTint="@color/white"
+        android:ems="10"
+        android:hint="Status"
+        android:textSize="13sp"
+        android:textColor="@color/dim_gray"
+        android:textColorHint="@color/gray"
+        android:paddingStart="10dp"
+        android:fontFamily="@string/font_family_light"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/ePrice" />
+
+    <EditText
+        android:id="@+id/eCategory"
+        android:layout_width="200dp"
+        android:layout_height="25dp"
+        android:layout_marginTop="5dp"
+        android:background="@drawable/round_corner"
+        android:backgroundTint="@color/white"
+        android:ems="10"
+        android:hint="Category"
+        android:textSize="13sp"
+        android:textColor="@color/dim_gray"
+        android:textColorHint="@color/gray"
+        android:paddingStart="10dp"
+        android:fontFamily="@string/font_family_light"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/eCriticalValue"
+        app:layout_constraintTop_toBottomOf="@+id/eCriticalValue" />
+
+    <EditText
+        android:id="@+id/eCriticalValue"
+        android:layout_width="200dp"
+        android:layout_height="25dp"
+        android:layout_marginTop="5dp"
+        android:background="@drawable/round_corner"
+        android:backgroundTint="@color/white"
+        android:ems="10"
+        android:hint="Critical Value"
+        android:textSize="13sp"
+        android:textColor="@color/dim_gray"
+        android:textColorHint="@color/gray"
+        android:paddingStart="10dp"
+        android:fontFamily="@string/font_family_light"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/eStatus" />
+
+    <Button
+        android:id="@+id/eUpdate"
+        android:layout_width="100dp"
+        android:layout_height="33dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="60dp"
+        android:layout_marginBottom="20dp"
+        android:background="@drawable/shape_rounded"
+        android:backgroundTint="@color/green"
+        android:text="Update"
+        android:textColor="@color/white"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/eCategory"
+        app:layout_constraintVertical_bias="0.006" />
+
+    <Button
+        android:id="@+id/eCancel"
+        android:layout_width="100dp"
+        android:layout_height="33dp"
+        android:layout_marginStart="48dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="20dp"
+        android:background="@drawable/shape_rounded"
+        android:backgroundTint="@color/imperial"
+        android:text="Cancel"
+        android:textColor="@color/white"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/eCategory"
+        app:layout_constraintVertical_bias="0.004" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

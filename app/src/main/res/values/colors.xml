@@ -1,0 +1,36 @@
+<resources>
+    <color name="colorPrimary">#008577</color>
+    <color name="colorPrimaryDark">#00574B</color>
+    <color name="colorAccent">#0774A3</color>
+    <color name="main_color">#0774A3</color>
+    <color name="white">#FFF</color>
+    <color name="disable">#C73030</color>
+    <color name="enable">#4CAF50</color>
+    <color name="gray">#D4D4D4</color>
+    <color name="black">#000000</color>
+
+    <!--Color Palette-->
+    <color name="green">#63AF4A</color>
+    <color name="navy_blue">#094C63</color>
+    <color name="orange">#FE6500</color>
+    <color name="pastel_orange">#FFB347</color>
+    <color name="dim_gray">#333333</color>
+    <color name="gray1">#7E7A82</color>
+    <color name="gray2">#EDEDED</color>
+    <color name="gray3">#BCBCBC</color>
+    <color name="dark_blue">#2f333f</color>
+    <color name="sky">#95C8D8</color>
+    <color name="air_force">#598BAF</color>
+    <color name="blueish">#355C7D</color>
+    <color name="imperial">#ED2939</color>
+    <color name="pastel_red">#FF6961</color>
+    <color name="mint">#86E3CE</color>
+    <color name="yellow">#FDD835</color>
+    
+    <color name="bg_start">#3499FF</color>
+    <color name="bg_end">#3A3985</color>
+    <color name="app_logo_background">#0073AC</color>
+    <color name="blue_1">#78c6e6</color>
+
+
+</resources>

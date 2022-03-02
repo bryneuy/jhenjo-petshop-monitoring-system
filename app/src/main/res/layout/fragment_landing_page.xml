@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#EFF1F8"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".Main.Fragment.LandingPageFragment">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="150dp" >
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:background="@color/main_color" />
+
+        <View
+            android:layout_width="55dp"
+            android:layout_height="100dp"
+            android:layout_marginTop="100dp"
+            android:background="@drawable/top_triangle_reverse"
+            android:backgroundTint="@color/main_color"
+            android:scaleX="-1" />
+
+        <View
+            android:layout_width="200dp"
+            android:layout_height="140dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginStart="15dp"
+            android:layout_marginTop="-40dp"
+            android:background="@drawable/jhenjo_text_logo"
+            android:backgroundTint="@color/white"/>
+
+    </FrameLayout>
+
+    <Button
+        android:id="@+id/secret_login"
+        android:layout_width="19dp"
+        android:layout_height="20dp" />
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="150dp"
+        android:id="@+id/child_fragment_container"
+        android:background="#EFF1F8">
+
+    </FrameLayout>
+
+    <EditText
+        android:id="@+id/mainSearch"
+        android:layout_width="300dp"
+        android:layout_height="40dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="55dp"
+        android:background="@drawable/shape_rounded2"
+        android:backgroundTint="@color/white"
+        android:drawableStart="@drawable/search"
+        android:drawablePadding="5dp"
+        android:drawableTint="@color/blue_1"
+        android:hint="Search"
+        android:textSize="11sp"
+        android:paddingStart="10dp"
+        android:paddingEnd="10dp"
+        android:fontFamily="@string/font_family_light"
+        android:elevation="2dp"/>
+
+    <com.google.android.material.tabs.TabLayout
+        android:id="@+id/cTabLayout"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginTop="101dp"
+        android:layout_marginStart="55dp"
+        app:tabMode="scrollable"
+        app:tabTextAppearance="@style/CustomTextAppearanceTab"
+        app:tabPaddingStart="20dp"
+        app:tabPaddingEnd="35dp"
+        app:tabSelectedTextColor="@color/main_color"
+        android:background="@drawable/tablayout_background"
+        android:backgroundTint="#EFF1F8"
+        app:tabRippleColor="@color/transparent">
+
+        <com.google.android.material.tabs.TabItem
+            android:id="@+id/Accessories"
+            android:layout_width="100dp"
+            android:layout_height="40dp"
+            android:paddingStart="20dp"
+            android:paddingTop="5dp"
+            android:paddingEnd="20dp"
+            android:paddingBottom="5dp"
+            android:text="Accessories"
+            android:textAlignment="center" />
+
+        <com.google.android.material.tabs.TabItem
+            android:id="@+id/Animal"
+            android:layout_width="100dp"
+            android:layout_height="40dp"
+            android:paddingStart="20dp"
+            android:paddingTop="5dp"
+            android:paddingEnd="20dp"
+            android:paddingBottom="5dp"
+            android:text="Animal"
+            android:textAlignment="center"/>
+
+        <com.google.android.material.tabs.TabItem
+            android:id="@+id/Aquarium"
+            android:layout_width="100dp"
+            android:layout_height="40dp"
+            android:paddingStart="20dp"
+            android:paddingTop="5dp"
+            android:paddingEnd="20dp"
+            android:paddingBottom="5dp"
+            android:text="Aquarium"
+            android:textAlignment="center"/>
+
+        <com.google.android.material.tabs.TabItem
+            android:id="@+id/Cage"
+            android:layout_width="100dp"
+            android:layout_height="40dp"
+            android:paddingStart="20dp"
+            android:paddingTop="5dp"
+            android:paddingEnd="20dp"
+            android:paddingBottom="5dp"
+            android:text="Cage"
+            android:textAlignment="center"/>
+
+        <com.google.android.material.tabs.TabItem
+            android:id="@+id/Food"
+            android:layout_width="100dp"
+            android:layout_height="40dp"
+            android:paddingStart="20dp"
+            android:paddingTop="5dp"
+            android:paddingEnd="20dp"
+            android:paddingBottom="5dp"
+            android:text="Food"
+            android:textAlignment="center"/>
+
+        <com.google.android.material.tabs.TabItem
+            android:id="@+id/Pump"
+            android:layout_width="100dp"
+            android:layout_height="40dp"
+            android:paddingStart="20dp"
+            android:paddingTop="5dp"
+            android:paddingEnd="20dp"
+            android:paddingBottom="5dp"
+            android:text="Pump"
+            android:textAlignment="center"/>
+
+
+    </com.google.android.material.tabs.TabLayout>
+
+
+</FrameLayout>

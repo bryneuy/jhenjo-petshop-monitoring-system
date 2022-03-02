@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <!-- Drop Shadow Stack -->
+    <!--Last/sixth layer-->
+    <item>
+        <shape>
+            <corners android:radius="10dp" />
+
+            <padding
+                android:bottom="3dp"
+                android:left="1dp"
+                android:right="1dp"
+                android:top="1dp" />
+
+            <solid android:color="#383838" />
+        </shape>
+    </item>
+    <!--Fifth layer-->
+    <item>
+        <shape>
+            <corners android:radius="4dp" />
+
+            <padding
+                android:bottom="1dp"
+                android:left="1dp"
+                android:right="1dp"
+                android:top="1dp" />
+
+            <solid android:color="#525252" />
+        </shape>
+    </item>
+    <!--Fourth layer-->
+    <item>
+        <shape>
+            <corners android:radius="4dp" />
+
+            <padding
+                android:bottom="3dp"
+                android:left="2dp"
+                android:right="2dp"
+                android:top="1dp" />
+
+            <solid android:color="#a3a3a3" />
+        </shape>
+    </item>
+    <!--Third layer-->
+    <item>
+        <shape>
+            <corners android:radius="6dp" />
+
+            <padding
+                android:bottom="1dp"
+                android:left="1dp"
+                android:right="1dp"
+                android:top="1dp" />
+
+            <solid android:color="#919191" />
+        </shape>
+    </item>
+    <!--Second layer-->
+    <item>
+        <shape>
+            <corners android:radius="4dp" />
+
+            <padding
+                android:bottom="1dp"
+                android:left="1dp"
+                android:right="1dp"
+                android:top="1dp" />
+
+            <solid android:color="#000000" />
+        </shape>
+    </item>
+
+    <!--First layer-->
+    <!-- Background -->
+    <item>
+        <shape>
+            <solid android:color="@color/air_force" />
+
+            <corners android:radius="4dp" />
+        </shape>
+    </item>
+
+</layer-list>
